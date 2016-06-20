@@ -1,0 +1,10 @@
+#GER,7209
+#BRA,6364
+@MesutOzil1088,2594
+@Podolski10,2536
+@mertesacker,2511
+#NED,928
+#TheWorldCup,369
+@12MarceloV,205
+@BenFoster,135
+#FRA,126
