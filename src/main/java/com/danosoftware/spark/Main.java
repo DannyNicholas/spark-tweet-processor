@@ -11,24 +11,22 @@ import org.slf4j.LoggerFactory;
  * 
  * @author Danny
  */
-public class Main
-{
-    private static Logger logger = LoggerFactory.getLogger(Main.class);
+public class Main {
+	private static Logger logger = LoggerFactory.getLogger(Main.class);
 
-    private static final String TWEET_FILE = "/Users/Danny/spark/tweets.json";
-    private static final String PHRASES_FILE = "/Users/Danny/spark/phrases.txt";
+	private static final String TWEET_FILE = "/Users/Danny/spark/tweets.json";
+	private static final String PHRASES_FILE = "/Users/Danny/spark/phrases.txt";
 
-    public static void main(String[] args)
-    {
+	public static void main(String[] args) {
 
-        logger.info("Starting Tweet Spark Processing.");
+		logger.info("Starting Tweet Spark Processing.");
 
-        SparkConf conf = new SparkConf().setAppName("Tweet Count").setMaster("local[*]");
-        JavaSparkContext sc = new JavaSparkContext(conf);
+		SparkConf conf = new SparkConf().setAppName("Tweet Count").setMaster("local[*]");
+		JavaSparkContext sc = new JavaSparkContext(conf);
 
-        TweetProcessor processor = new TweetProcessor(TWEET_FILE, PHRASES_FILE);
-        processor.process(sc);
+		TweetProcessor processor = new TweetProcessor(TWEET_FILE, PHRASES_FILE);
+		processor.process(sc);
 
-        logger.info("Completed Tweet Spark Processing.");
-    }
+		logger.info("Completed Tweet Spark Processing.");
+	}
 }
