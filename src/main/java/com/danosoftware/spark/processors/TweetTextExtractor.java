@@ -1,10 +1,10 @@
-package com.claritize.spark.processors;
+package com.danosoftware.spark.processors;
 
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.Function;
 
-import com.claritize.spark.beans.Tweet;
-import com.claritize.spark.interfaces.ISparkTransformer;
+import com.danosoftware.spark.beans.Tweet;
+import com.danosoftware.spark.interfaces.ISparkTransformer;
 
 /**
  * Transforms a RDD of tweets into a RDD of strings representing the tweet's

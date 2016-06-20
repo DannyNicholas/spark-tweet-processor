@@ -1,10 +1,10 @@
-package com.claritize.spark.processors;
+package com.danosoftware.spark.processors;
 
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.Function;
 
-import com.claritize.spark.beans.Tweet;
-import com.claritize.spark.interfaces.ISparkProcessor;
+import com.danosoftware.spark.beans.Tweet;
+import com.danosoftware.spark.interfaces.ISparkProcessor;
 
 /**
  * Find and store the unique user IDs seen in an RDD of tweets.

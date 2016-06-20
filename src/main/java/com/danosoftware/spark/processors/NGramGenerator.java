@@ -1,4 +1,4 @@
-package com.claritize.spark.processors;
+package com.danosoftware.spark.processors;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.FlatMapFunction;
 
-import com.claritize.spark.interfaces.ISparkTransformer;
+import com.danosoftware.spark.interfaces.ISparkTransformer;
 
 /**
  * Generates configurable n-grams from the RDD of strings.

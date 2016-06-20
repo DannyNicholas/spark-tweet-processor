@@ -1,13 +1,13 @@
-package com.claritize.spark.processors;
+package com.danosoftware.spark.processors;
 
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 
-import scala.Tuple2;
+import com.danosoftware.spark.interfaces.ISparkTransformerPair;
 
-import com.claritize.spark.interfaces.ISparkTransformerPair;
+import scala.Tuple2;
 
 /**
  * Transfomer that takes a RDD of strings and applies a map reduce function to

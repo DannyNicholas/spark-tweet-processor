@@ -1,4 +1,4 @@
-package com.claritize.spark;
+package com.danosoftware.spark;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;
