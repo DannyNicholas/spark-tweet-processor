@@ -1,4 +1,4 @@
-package com.claritize.spark.interfaces;
+package com.danosoftware.spark.interfaces;
 
 import java.io.Serializable;
 

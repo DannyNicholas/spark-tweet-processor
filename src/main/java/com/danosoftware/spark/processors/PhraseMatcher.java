@@ -1,4 +1,4 @@
-package com.claritize.spark.processors;
+package com.danosoftware.spark.processors;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -15,9 +15,9 @@ import org.apache.spark.api.java.function.PairFunction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import scala.Tuple2;
+import com.danosoftware.spark.interfaces.ISparkProcessorSingleAndPair;
 
-import com.claritize.spark.interfaces.ISparkProcessorSingleAndPair;
+import scala.Tuple2;
 
 /**
  * Class that matches the supplied RDD of word counts with a RDD of phrases

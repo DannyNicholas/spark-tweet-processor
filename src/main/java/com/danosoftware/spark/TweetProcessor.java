@@ -1,4 +1,4 @@
-package com.claritize.spark;
+package com.danosoftware.spark;
 
 import java.io.Serializable;
 
@@ -6,20 +6,20 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
-import com.claritize.spark.beans.Tweet;
-import com.claritize.spark.interfaces.ISparkProcessor;
-import com.claritize.spark.interfaces.ISparkProcessorPair;
-import com.claritize.spark.interfaces.ISparkTransformer;
-import com.claritize.spark.interfaces.ISparkTransformerPair;
-import com.claritize.spark.processors.NGramGenerator;
-import com.claritize.spark.processors.PhraseMatcher;
-import com.claritize.spark.processors.StringCountCsvWriter;
-import com.claritize.spark.processors.StringCounter;
-import com.claritize.spark.processors.TextSplitter;
-import com.claritize.spark.processors.TweetCounter;
-import com.claritize.spark.processors.TweetTextExtractor;
-import com.claritize.spark.processors.UniqueUsersWriter;
-import com.claritize.spark.utilities.ParseJson;
+import com.danosoftware.spark.beans.Tweet;
+import com.danosoftware.spark.interfaces.ISparkProcessor;
+import com.danosoftware.spark.interfaces.ISparkProcessorPair;
+import com.danosoftware.spark.interfaces.ISparkTransformer;
+import com.danosoftware.spark.interfaces.ISparkTransformerPair;
+import com.danosoftware.spark.processors.NGramGenerator;
+import com.danosoftware.spark.processors.PhraseMatcher;
+import com.danosoftware.spark.processors.StringCountCsvWriter;
+import com.danosoftware.spark.processors.StringCounter;
+import com.danosoftware.spark.processors.TextSplitter;
+import com.danosoftware.spark.processors.TweetCounter;
+import com.danosoftware.spark.processors.TweetTextExtractor;
+import com.danosoftware.spark.processors.UniqueUsersWriter;
+import com.danosoftware.spark.utilities.ParseJson;
 
 /**
  * Processor that executes all the computations required for the JSON file of

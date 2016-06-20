@@ -1,12 +1,12 @@
-package com.claritize.spark.processors;
+package com.danosoftware.spark.processors;
 
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.Function;
 
-import scala.Tuple2;
+import com.danosoftware.spark.interfaces.ISparkProcessorPair;
 
-import com.claritize.spark.interfaces.ISparkProcessorPair;
+import scala.Tuple2;
 
 /**
  * Class that writes to a CSV file with supplied strings and counts from a RDD

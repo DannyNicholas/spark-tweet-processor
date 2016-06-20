@@ -1,4 +1,4 @@
-package com.claritize.spark.beans;
+package com.danosoftware.spark.beans;
 
 import java.io.Serializable;
 

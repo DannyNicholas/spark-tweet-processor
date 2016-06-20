@@ -1,4 +1,4 @@
-package com.claritize.spark.utilities;
+package com.danosoftware.spark.utilities;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -8,7 +8,7 @@ import org.apache.spark.api.java.function.FlatMapFunction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.claritize.spark.beans.Tweet;
+import com.danosoftware.spark.beans.Tweet;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;

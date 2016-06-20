@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.claritize.spark">
+	<logger name="com.danosoftware.spark">
 		<level value="info" />
 	</logger>
 
