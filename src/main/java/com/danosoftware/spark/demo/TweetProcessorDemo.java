@@ -49,11 +49,14 @@ public class TweetProcessorDemo {
 	public static void main(String[] args) {
 
 		logger.info("Starting Tweet Spark Processing.");
+		long timeStarted = System.nanoTime();
 
 		TweetProcessorDemo processor = new TweetProcessorDemo();
 		processor.process();
 
+		long timeFinished = System.nanoTime();
 		logger.info("Completed Tweet Spark Processing.");
+		logger.info("Duration '{}' milliseconds.", (timeFinished - timeStarted) / 1_000_000);
 	}
 
 	/**
