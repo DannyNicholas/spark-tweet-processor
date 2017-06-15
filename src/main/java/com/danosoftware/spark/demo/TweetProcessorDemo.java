@@ -84,31 +84,31 @@ public class TweetProcessorDemo {
 		 * Extract the contents of each tweet
 		 */
 		JavaRDD<String> sentences = tweets.map(tweet -> tweet.getText());
-		// log(sentences);
+		log(sentences);
 
 		/*
 		 * Split each sentence into words
 		 */
 		JavaRDD<String> words = sentences.flatMap(sentance -> Arrays.asList(sentance.split("\\s+")));
-		// log(words);
+		log(words);
 
 		/*
 		 * Create a pair of each word and a count
 		 */
 		JavaPairRDD<String, Long> wordCount = words.mapToPair(word -> new Tuple2<>(word, 1L));
-		// log(wordCount);
+		log(wordCount);
 
 		/*
 		 * Reduce the counts by the word key
 		 */
 		JavaPairRDD<String, Long> reducedWordCount = wordCount.reduceByKey((count1, count2) -> count1 + count2);
-		// log(reducedWordCount);
+		log(reducedWordCount);
 
 		/*
 		 * Filter the high frequency words
 		 */
-		JavaPairRDD<String, Long> results = reducedWordCount.filter(t -> (t._2 > 1000));
-		log(results);
+		JavaPairRDD<String, Long> highFreqWords = reducedWordCount.filter(countedWord -> (countedWord._2 > 1000));
+		log(highFreqWords);
 
 		// close the spark context
 		sc.close();
